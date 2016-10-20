@@ -4,12 +4,18 @@
   "name": "EasyMister Plugin",
   "description": "This extension will help you to be the best coach in the world!",
   "version": "1.0",
-
+    
   "browser_action": {
    "default_icon": "icon.png",
    "default_popup": "popup.html"
   },
   "permissions": [
    "activeTab"
-   ]
+   ],
+   "content_scripts": [
+    {
+      "matches": ["https://playmister.com/*"],
+      "js": ["assets/js/jquery-3.1.1.min.js", "content_script.js"]
+    }
+  ]
 }
