@@ -1,3 +1,5 @@
-$("#checkPage").click(function () {
-    alert("hola");
+$(document).ready(function () {
+    $("#checkPage").click(function () {
+        alert("hola");
+    });
 });

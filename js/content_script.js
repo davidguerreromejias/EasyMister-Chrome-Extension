@@ -11,3 +11,4 @@ $('.btn-simple').each(function(i, obj) {
       $(this).css("background-color","rgba(0, 181, 20, 0.64)");
     }
 });
+
