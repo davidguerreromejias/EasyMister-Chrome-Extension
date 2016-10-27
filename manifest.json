@@ -6,8 +6,8 @@
   "version": "1.0",
     
   "browser_action": {
-   "default_icon": "icon.png",
-   "default_popup": "popup.html"
+   "default_icon": "assets/images/icon.png",
+   "default_popup": "html/popup.html"
   },
   "permissions": [
    "activeTab"
@@ -15,7 +15,7 @@
    "content_scripts": [
     {
       "matches": ["https://playmister.com/*"],
-      "js": ["assets/js/jquery-3.1.1.min.js", "content_script.js"]
+      "js": ["assets/js/jquery-3.1.1.min.js", "js/content_script.js"]
     }
   ]
 }
